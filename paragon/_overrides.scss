@@ -1,7 +1,6 @@
 // This file is included after all of Bootstrap. Any customization that can't
 // be made using variable definitions should be done here.
 
-
 // Alerts
 
 .alert-dismissible .close {
@@ -282,4 +281,66 @@ a.inline-link {
 }
 .progress-bar { 
   background-color: $progress-bar-bg;
+}
+
+$navbar-light-color: black;
+$body-border-color: black;
+$theme-primary: #FFD323;
+
+.navbar {
+  .navbar-brand img {
+    max-height: 40px;
+  }
+  .nav-item {
+    .nav-link {
+      
+    }
+  }
+}
+
+#root {
+    border: 20px solid $body-border-color;
+}
+
+.learning-header {
+    a.text-gray-700 {
+        border-bottom: 2px solid $body-border-color;
+        padding-top: 7px;
+        padding-bottom: 7px;
+        color: $navbar-light-color !important; 
+    }
+
+    a.text-gray-700:hover {
+        border-bottom-color: $theme-primary;
+        text-decoration: none;
+    }
+
+}
+
+.learning-header .dropdown {
+    .btn-outline-primary {
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 2px solid $body-border-color;
+        color: $navbar-light-color;
+        padding-right: 0;
+        padding-left: 0;
+
+        &:focus::before {
+            border: none;
+        }
+
+        &.dropdown-toggle {
+            background-color: transparent;
+            border-color: $theme-primary;
+            color: $navbar-light-color;
+        }
+    }
+
+    svg.fa-user-circle {
+        display: block !important;
+        color: $theme-primary;
+        margin-right: 0.5rem;
+    } 
 }
